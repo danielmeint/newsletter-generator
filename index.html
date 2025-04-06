@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Marked.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Newsletter Generator</h1>
+            <div class="controls">
+                <button id="toggle-view-btn">Toggle Mobile View</button>
+                <button id="copy-html-btn">Copy HTML</button>
+                <button id="export-html-btn">Export HTML</button>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="editor-pane">
+                <h2>Markdown Editor</h2>
+                <textarea id="markdown-editor" placeholder="Type your Markdown here..."></textarea>
+            </section>
+            <section class="preview-pane">
+                <h2>Live Preview</h2>
+                <div id="html-preview" class="preview-desktop">
+                    <!-- Rendered HTML will appear here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 
